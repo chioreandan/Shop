@@ -180,6 +180,7 @@
     </Compile>
     <Compile Include="Migrations\ShopContextModelSnapshot.cs" />
     <Compile Include="Model\Address.cs" />
+    <Compile Include="Model\Favorites.cs" />
     <Compile Include="Model\Order.cs" />
     <Compile Include="Model\ProductCategory.cs" />
     <Compile Include="Model\Product.cs" />

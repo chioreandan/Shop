@@ -13,5 +13,7 @@ namespace Shop.Model
         public int Stock { get; set; }
         public float Price { get; set; }
         public ProductCategory ProductCategory { get; set; }
+        public int ProductForeignKey { get; set; }
+
     }
 }

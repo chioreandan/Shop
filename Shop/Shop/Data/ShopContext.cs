@@ -21,7 +21,7 @@ namespace Shop.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Address> Addresses { get; set; }
         public DbSet<Product> Products { get; set; }
-        public DbSet<ProductCategory> ProductCategories { get; set; }
+        public DbSet<ProductCategory> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -43,10 +43,17 @@ namespace Shop.Data
                 .HasForeignKey<Address>(ad => ad.UserId);
 
             //One to one Product -> ProductCategory
-            modelBuilder.Entity<Product>()
+            /*modelBuilder.Entity<Product>()
                 .HasOne(p => p.ProductCategory)
                 .WithOne(c => c.Product)
-                .HasForeignKey<ProductCategory>(c => c.ProductId);
+                .HasForeignKey<ProductCategory>(c => c.ProductId);*/
+
+            //One to many Product->ProductCategory
+            modelBuilder.Entity<Product>()
+                .HasOne(p => p.ProductCategory)
+                .WithMany(c => c.Products)
+                .HasForeignKey<ProductCategory>(p =>p.Id);
+
 
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
