@@ -5,8 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ShopV03"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
+        Title="MainWindow" Height="546" Width="713">
+    <Grid Margin="39,32,21,0" Height="392" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*" />
+            <ColumnDefinition Width="0*" />
+        </Grid.ColumnDefinitions>
+        <Button Name="button1" Content="Continua" HorizontalAlignment="Left" Margin="202,254,0,0" VerticalAlignment="Top" Width="216" Click="Button_Click" Foreground="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" FontFamily="Franklin Gothic Medium" FontSize="36" Height="49" BorderBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
         
+        <TextBox Name="email" HorizontalAlignment="Left" Height="44" Margin="116,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="378" TextChanged="email_TextChanged" TextAlignment="Center" FontSize="20" AcceptsReturn="False" MaxLines="1" IsUndoEnabled="True"/>
+        <Label Content="Introdu adresa de email" HorizontalAlignment="Left" Margin="116,40,0,0" VerticalAlignment="Top" Width="378" FontFamily="Franklin Gothic Medium" FontSize="36" Height="60"/>
+
+
     </Grid>
 </Window>

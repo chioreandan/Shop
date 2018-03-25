@@ -24,5 +24,15 @@ namespace ShopV03
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void email_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

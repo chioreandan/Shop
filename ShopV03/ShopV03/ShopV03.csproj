@@ -63,15 +63,47 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Admin.cs">
+      <DependentUpon>ShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <DependentUpon>ShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>ShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCategory.cs">
+      <DependentUpon>ShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Seller.cs">
+      <DependentUpon>ShopModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="ShopModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ShopModel.Context.tt</DependentUpon>
     </Compile>
+    <Compile Include="ShopModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShopModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="ShopModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ShopModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.cs">
+      <DependentUpon>ShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier1.cs">
+      <DependentUpon>ShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>ShopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="user.cs">
+      <DependentUpon>ShopModel.tt</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -124,6 +156,12 @@
     <Content Include="ShopModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ShopModel.Context.cs</LastGenOutput>
+      <DependentUpon>ShopModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="ShopModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ShopModel.edmx</DependentUpon>
+      <LastGenOutput>ShopModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
