@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ShopV02.Properties
+namespace ShopV03.Properties
 {
 
 

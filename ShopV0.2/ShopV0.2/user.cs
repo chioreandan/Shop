@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ShopV0._2
+namespace ShopV02
 {
     using System;
     using System.Collections.Generic;
