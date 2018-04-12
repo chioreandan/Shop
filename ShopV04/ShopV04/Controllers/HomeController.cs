@@ -14,15 +14,15 @@ namespace ShopV04.Controllers
         }
 
         public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
+         {
+             ViewBag.Message = "Your application description page.";
 
-            return View();
-        }
+             return View();
+         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Users = "Your contact page.";
 
             return View();
         }
