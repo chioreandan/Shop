@@ -27,7 +27,7 @@ namespace ShopV5.Models
         [StringLength(10)]
         public string PhoneNumber { get; set; }
 
-        [StringLength(20)]
+        [StringLength(50)]
         public string Email { get; set; }
 
         [StringLength(50)]

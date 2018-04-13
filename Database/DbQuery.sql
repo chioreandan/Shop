@@ -174,7 +174,7 @@ CREATE TABLE [dbo].[Users](
 	[UserId] [int] NOT NULL,
 	[FullName] [nchar](20) NULL,
 	[PhoneNumber] [nchar](10) NULL,
-	[Email] [nchar](20) NULL,
+	[Email] [nchar](50) NULL,
 	[Address] [nchar](50) NULL,
 	[Password] [nchar](16) NULL,
  CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED 

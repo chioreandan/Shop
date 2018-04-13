@@ -12,23 +12,21 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            Username
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.FullName)
+            Fullname
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.PhoneNumber)
+            Phone Number
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Email)
+            E-mail
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Address)
+            Adress
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Password)
-        </th>
+        
         <th></th>
     </tr>
 
@@ -49,9 +47,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.Address)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Password)
-        </td>
+        
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.UserId }) |
             @Html.ActionLink("Details", "Details", new { id=item.UserId }) |
